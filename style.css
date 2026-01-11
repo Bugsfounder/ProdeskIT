@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B0E1A;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #13181e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(3, 181, 194);
+    font-size: large;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 10px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.home {
+    background-image: url("./images/bg6.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home2 {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 0px 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* background: linear-gradient(119deg,
+            rgba(33, 52, 72, 0.6),
+            rgba(0, 0, 0, 0.3)); */
+
+    background: linear-gradient(119deg, rgba(33, 52, 72, 0.6), rgb(0 0 0))
+}
+
+.home2 div {
+    margin: 0px 100px;
+}
+
+.home2 div h1 {
+    font-size: 52px;
+    margin: 10px 0px;
+}
+
+.home2 div p {
+    font-size: large;
+    margin: 10px 0px;
+}
+
+.home2 div button {
+    font-size: large;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: rgb(1, 30, 54);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.image img {
+    width: 800px;
+    border-radius: 100px;
+
+    -webkit-mask-image:
+        linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%),
+        linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    -webkit-mask-composite: intersect;
+
+    mask-image:
+        linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%),
+        linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-composite: intersect;
+}
+
+
+/* Boxes Container */
+.boxes {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+/* Glass Boxes */
+.box {
+    width: 200px;
+    height: 200px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Individual colors (kept subtle for glass effect) */
+.b1 {
+    background: rgba(255, 0, 0, 0.2);
+}
+
+.b2 {
+    background: rgba(0, 255, 0, 0.2);
+}
+
+.b3 {
+    background: rgba(255, 255, 0, 0.2);
+}
+
+.b4 {
+    background: rgba(0, 255, 255, 0.2);
+}
+
+/* Other sections */
+.services {
+    background-color: #14182B;
+    height: 400px;
+}
+
+.footer {
+    background-color: #080A14;
+    height: 200px;
+}
