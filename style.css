@@ -52,9 +52,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .home2 {
@@ -154,12 +152,60 @@ body {
 }
 
 /* Other sections */
-.services {
-    background-color: #14182B;
-    height: 400px;
-}
+.services {}
 
 .footer {
     background-color: #080A14;
-    height: 200px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
 }
+
+
+.services {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 50px 45px ;
+}
+
+.info h1 {}
+
+.info p {}
+
+.servicesCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    padding: 28px;
+    width: 500px;
+    margin: 10px;
+}
+
+.image-card {}
+
+.image-card img {
+    width: 500px;
+}
+
+.card h1 {}
+
+.card p {}
+
+.card button {}
