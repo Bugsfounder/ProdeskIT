@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+	el: document.querySelector("[data-scroll-container]"),
+	smooth: true,
+});
+
 // Dark Mode Toggle
 const darkModeToggle = document.getElementById("darkModeToggle");
 const body = document.body;

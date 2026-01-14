@@ -43,8 +43,8 @@ body {
 
 /* Navbar */
 .navbar {
-	background-color: var(--navbar-bg);
-	backdrop-filter: blur(50px);
+	/* background-color: var(--navbar-bg); */
+	backdrop-filter: blur(40px);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -83,7 +83,7 @@ body {
 }
 
 .navbar ul li a {
-	color: var(--text-primary);
+	color: var(--accent);
 	text-decoration: none;
 	padding: 0.5rem 1rem;
 	font-weight: 500;
@@ -131,7 +131,6 @@ body {
 	background-image: url("./images/lightHero.avif");
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
@@ -393,7 +392,6 @@ body.dark-mode .home2 div h1 {
 	background-image: url("./images/lightSer.avif");
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
 	position: relative;
 }
 
@@ -832,7 +830,9 @@ body.dark-mode .services::before {
 }
 
 @media screen and (max-width: 480px) {
-	
+	.navbar {
+		padding: 5px 20px;
+	}
 
 	.home2 {
 		padding: 40px 20px;
