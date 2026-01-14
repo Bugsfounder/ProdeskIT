@@ -1,3 +1,27 @@
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById("darkModeToggle");
+const body = document.body;
+
+// Check if dark mode was previously enabled
+if (localStorage.getItem("darkMode") === "enabled") {
+	body.classList.add("dark-mode");
+	darkModeToggle.textContent = "☀️";
+}
+
+// Toggle dark mode on button click
+darkModeToggle.addEventListener("click", () => {
+	body.classList.toggle("dark-mode");
+
+	// Save preference to localStorage
+	if (body.classList.contains("dark-mode")) {
+		localStorage.setItem("darkMode", "enabled");
+		darkModeToggle.textContent = "☀️";
+	} else {
+		localStorage.setItem("darkMode", "disabled");
+		darkModeToggle.textContent = "🌙";
+	}
+});
+
 // Dynamic 3D Card Tilt Effect
 const heroImage = document.querySelector(".image img");
 const imageContainer = document.querySelector(".image");
